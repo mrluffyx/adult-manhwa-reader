@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Simple Adult Manga Reader With No Ads">
+    <meta name="author" content="MrLuffyX">
+    <title>Simple Adult Manga Reader With No Ads | Latest Adult Manhwa</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <!-- Bootstrap core CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+<meta name="theme-color" content="#7952b3">
+    
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <style>
+    .manga-title {
+     overflow: hidden;
+     text-overflow: ellipsis;
+     display: -webkit-box;
+     -webkit-line-clamp: 2;
+     -webkit-box-orient: vertical;
+    }
+    </style>
+    
+  <div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAEtklEQVRoge2ZW4hWVRTHf984Kk1jlj2kI2H2UIwRacVot7EiSLtQBFlPRWUvSQTdsJCCyogy6CWSiMoeqrGioKDJLmpWYxcjxyZSJ4hRuznihZnQRj09rP/unO+b852z9/edT3qYPxz2OXuv9V9rX87Za68DYxhDQ1AqmO9sYAEwDzgDaAMmq20/8BuwDegBuoEfC7Y/CuOAl4HdwAfAyRmy44E7gF4gCrw2A7eLoxpagC758jZwXEhHbqww+FIVuYuBvoTcHuBN4DagA5ghR1p036G2Lsk6vT7goio2llf4cndIR96X0tPAQeCIOpfE/cCI5AaAxUBzgI1m4E7pRuK6t0LmioT9JyT3TYANfpHS6SKPgMPAc8DMBGkErAAmhpBXYCLwbILvcezdekydiICngON1P0TAuz0opTY9P0g8+u76B5uForBYnBE2AxFwFFsVJWACNphHyX6nyrBJRFcm6s4BPiLuyJL6fR+FJQn+dcCFibY5qt8RQuiWzocV9d2qf71WTz3wRhXbq1T/YgjZNOy7HwGPqO4SPR8ATqrH0xxMkY1INgHuwpbUIeDMUMKbpRwBn2BT7b5kjcYK2foUeJcClvMiYG+CaASbrUZjOvZiO7vD2Ke6LpxCvG6/rpcsAN/K5jvAqXnCTR6EfwK/6n5t7X4FY53KrXh8qXw6AvbpBfgipe1qYKeMLfTk89HbUGG7EGzDpnl2StsO4rU8EMCZp3eu2rb6kPnOiAvF93jKF4FBlScWSepinpaUtoXY6A5gZxFf5Om1yObBIE9z4JbAsYa3XZ+ldVp9vhSCun3oAP7ARuXLAL2vdCXPJ83A56oP4YmA34HzA/TK0IntqBEWJrQG6G6R3irsKDAdeE11vQE8rcQhyhDVT5FVMYP4TLKS8CTFfOJBSF7DxIGgL5qwiDcC/sJjl3coYUFiBKzBEhG1YA7wHjYgg9jIpu1DPhiX8OljPAf2Bins5dgEiL5oA/Zhvl3vo7BZwvc10Kla8QDm2/d5gudJcB922P+/oZV4VsqWaeU+cq3K1diL6TAN+A74rEEOpmEtFsonl/cQ8Jbur8tSXoP1NpnDmgn0E395phblaQamJuz1U74hLlJ9dxaBi3Lb9TwZ+JnyT+hlhbqcjssrbP5EHLi2kxIVVy6tKSpd5PkMdtjvA15V3axCXU7HWSpfke124lzBbpVZ+ej/ZuQmLDo9gmUuZgG3qu35Ql1OxwuydYtsH5IvC+Rb7jnlYUbvxg+pbTbhMVet6JEtdzpcmuLX0iyCJmAZ1tte4B7iXXQCNjLDhCWrQzEe+Fu2XGq0JF965dsy/A+FqfiB8pFqBFxqdFOIUmivHPkFgXohmKcyd/dOIrQj7v24NENmPbAdeBSYC5yga67qthOnetIwX2XIuSUYLv+7K0PG97dbNeyiPO9bONqId/j1GXLO0ZXYAeuAri2qy+uIyzH3E/+fKQwlLM6KgI3ApAzZPEfz2ifJhkueF4prRLyf/Fir3o4gG+63xlWePnphtUiXe8gW0RGAJyXX5SHrjZ0i7fSQLaojnQSkYX2TCiOE7+bVuEMTfYfx+Pnpu49sDDS+IaMtLaOfhZ5A+TGMoUj8CyaTiB/WbnspAAAAAElFTkSuQmCC"/>
+        <span class="fs-4 mr-5">Manhwa Reader</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Latest</a></li>
+        <li class="nav-item"><a href="/all.html" class="nav-link">All Manhwa</a></li>
+      </ul>
+    </header>
+
+
+  <main>
+    <div class="card">
+      <div class="card-header text-bold">
+        <i class="fas fa-fire"></i> Latest Manhwa
+      </div>
+      <div class="card-body">
+        
+        <div class="row" id="latestBox">
+          </div>
+
+          <div class="text-center" id="pagination">
+          </div>
+
+        </div>
+      </div>
+
+  </main>
+  <footer class="pt-5 my-5 text-muted border-top">
+    Simple and AdFree Adult Manhwa Reader, Data Scrapped from Hiperdex.
+  </footer>
+</div>
+    
+    <script>
+      var $_GET={};if(-1!==document.location.toString().indexOf("?"))for(var query=document.location.toString().replace(/^.*?\?/,"").replace(/#.*$/,"").split("&"),i=0,l=query.length;i<l;i++){var aux=decodeURIComponent(query[i]).split("=");$_GET[aux[0]]=aux[1]}function loadApi(e){let t=e;this.Request=new XMLHttpRequest,this.Request.open("GET",t),this.Request.responseType="json",this.Request.send()}
+
+      function getLatest(){
+          let page = $_GET['page']
+          page==null?page=1:page
+
+          let latestBox = document.getElementById('latestBox')
+          let aniRequest = new loadApi(`https://manhwa-api.vercel.app/api/all/${page}`)
+
+          latestBox.innerHTML = `
+          <div id="loader" class="loader text-center">
+            <img src="loader.svg" height="60">
+          </div>
+          `
+          aniRequest.Request.onload = function() {
+              const result = aniRequest.Request.response
+              
+              let m_list = result.list
+
+              latestBox.innerHTML = m_list.map(manga => {
+                  return `
+                    <div class="col-12 col-md-6 col-lg-4 rounded px-4 pb-4">
+                      <div class="manga-holder bg-light row">
+                        <div class="col-auto m-0 p-0">
+                          <a href="/manga.html?manga=${manga.url.replace('https://hiperdex.com/manga/','').replace('/','')}">
+                            <img src="${manga.image}" class="img-fluid" style="height:150px; width:120px; object-fit: cover;">
+                          </a>
+                        </div>
+                        <div class="col py-2">
+                        <span><i class="fas fa-star" style="color:gold;"></i> ${manga.rating}
+                          <div>
+                          </span>
+                            <h3 class="fs-5 manga-title"><a href="/manga.html?manga=${manga.url.replace('https://hiperdex.com/manga/','').replace('/','')}" class="text-decoration-none" title="${manga.title}">${manga.title}</a></h3>
+                            
+                            ${manga.chapters.map(chapter => {
+                              return `<div><a href="/reader.html?manga=${chapter.c_url.replace('https://hiperdex.com/manga','').replace('/','')}" class="text-muted">${chapter.c_title}</a> - <span class="text-muted">${chapter.status?chapter.status:chapter.c_date}</span></div>`
+                            }).join('')}
+                          </div>
+                        </div>
+                      </div>
+                   </div>
+                  `
+              }).join('')
+
+              getPagination(result.current_page,27)
+            }
+      }
+
+      function getPagination(offset,offsetTotal){
+            loadHolder = document.getElementById('pagination')
+
+            HTML = `
+            ${offset>1?`<a class="btn btn-primary btn-lg px-4 mx-2 text-center" href="/all.html?page=1">First</a>`:''}
+
+            ${offset-2>0 ? `<a class="btn btn-primary btn-lg  mx-2 text-center" href="/all.html?page=${offset-1}" id="ani-${offset-1}">&lsaquo; ${offset-1}</a>` : ''}
+
+          <a class="btn btn-lg  mx-2 text-center" href="/all.html?page=${offset}" id="ani-${offset}">${(offset)}</a>
+
+          ${offset>offsetTotal-3 ? '' : `<a class="btn btn-primary btn-lg  mx-2 text-center" href="/all.html?page=${offset+1}" id="ani-${offset+1}">${offset+1} &rsaquo; </a>`}
+
+            ${offset>offsetTotal-4 ? '' : `...`}
+
+            ${offset>offsetTotal || (offset==offsetTotal-1) || (offset==offsetTotal) ? '' : `<a class="btn btn-primary btn-lg  mx-2 text-center" href="/all.html?page=${offsetTotal-1}" id="ani-${offset-1}">${offsetTotal-1}</a>`}
+
+            ${offset>=offsetTotal ? '' : `<a class="btn btn-primary btn-lg  mx-2 px-4 text-center" href="/all.html?page=${offsetTotal}">Last</a>`}
+            
+            `
+            loadHolder.innerHTML = HTML
+            document.getElementById('ani-'+offset-1).classList.add('btn-active')
+      }
+
+      getLatest()
+
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+      
+  </body>
+</html>
